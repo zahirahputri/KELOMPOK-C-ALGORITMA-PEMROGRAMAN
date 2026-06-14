@@ -1,4 +1,3 @@
-
 # Fungsi Modular
 
 hitung_interval <- function(p_topi, n, alpha) {
@@ -24,8 +23,6 @@ hitung_interval <- function(p_topi, n, alpha) {
   return(c(batas_bawah, batas_atas))
 }
 
-
-
 # Implementasi Fungsi Modular Untuk 3 Skenario
 # Skenario 1: Normal (Alpha 5%)
 cat("\n Jalankan Skenario 1")
@@ -38,7 +35,6 @@ if (p_topi_1 < 0 || p_topi_1 > 1) {
   if (!is.null(hasil_1)) cat("\nHasil 1:", hasil_1[1], "< p <", hasil_1[2], "\n")
 }
 
-
 # Skenario 2: Normal (Alpha 10%)
 cat("\n Jalankan Skenario 2")
 p_topi_2 <- 0.45; n_2 <- 250; alpha_2 <- 0.10
@@ -49,7 +45,6 @@ if (p_topi_2 < 0 || p_topi_2 > 1) {
   hasil_2 <- hitung_interval(p_topi_2, n_2, alpha_2)
   if (!is.null(hasil_2)) cat("\nHasil 2:", hasil_2[1], "< p <", hasil_2[2], "\n")
 }
-
 
 # Skenario 3: Input Tidak Valid (p_topi > 1)
 cat("\n Jalankan Skenario 3")
